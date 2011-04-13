@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.6: http://docutils.sourceforge.net/" />
+<title>Brown Coherence Toolkit v1.0</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 5951 2009-05-18 18:03:10Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left{
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: left }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="brown-coherence-toolkit-v1-0">
+<h1 class="title">Brown Coherence Toolkit v1.0</h1>
+
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#what-is-this-software" id="id1">What is this software?</a></li>
+<li><a class="reference internal" href="#installing-the-software" id="id2">Installing the software</a></li>
+<li><a class="reference internal" href="#using-the-software" id="id3">Using the software</a><ul>
+<li><a class="reference internal" href="#document-formats" id="id4">Document Formats</a></li>
+<li><a class="reference internal" href="#data" id="id5">Data</a><ul>
+<li><a class="reference internal" href="#switchboard-synthetic-data" id="id6">Switchboard Synthetic Data</a></li>
+<li><a class="reference internal" href="#linux-irc-data" id="id7">Linux IRC data</a></li>
+<li><a class="reference internal" href="#adams-08-irc-data" id="id8">Adams 08 IRC data</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#looking-at-data" id="id9">Looking at Data</a></li>
+<li><a class="reference internal" href="#making-models" id="id10">Making Models</a><ul>
+<li><a class="reference internal" href="#entity-grid-extended-entity-grid" id="id11">Entity grid / extended entity grid</a></li>
+<li><a class="reference internal" href="#linear-entity-grid" id="id12">Linear entity grid</a></li>
+<li><a class="reference internal" href="#topical-entity-grid" id="id13">Topical entity grid</a></li>
+<li><a class="reference internal" href="#ibm-1" id="id14">IBM-1</a></li>
+<li><a class="reference internal" href="#pronouns" id="id15">Pronouns</a></li>
+<li><a class="reference internal" href="#discourse-newness" id="id16">Discourse-newness</a></li>
+<li><a class="reference internal" href="#time" id="id17">Time</a></li>
+<li><a class="reference internal" href="#speaker" id="id18">Speaker</a></li>
+<li><a class="reference internal" href="#mention" id="id19">Mention</a></li>
+<li><a class="reference internal" href="#combinations" id="id20">Combinations</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#examining-a-model" id="id21">Examining a Model</a></li>
+<li><a class="reference internal" href="#testing-models" id="id22">Testing Models</a><ul>
+<li><a class="reference internal" href="#discrimination" id="id23">Discrimination</a></li>
+<li><a class="reference internal" href="#insertion" id="id24">Insertion</a></li>
+<li><a class="reference internal" href="#disentangling-a-single-utterance" id="id25">Disentangling a single utterance</a></li>
+<li><a class="reference internal" href="#disentangling-a-transcript" id="id26">Disentangling a transcript</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#programming-with-the-software" id="id27">Programming with the software</a></li>
+</ul>
+</div>
+<div class="section" id="what-is-this-software">
+<h1><a class="toc-backref" href="#id1">What is this software?</a></h1>
+<p>This software contains tools for replicating the main results of our
+ACL '11 papers, &quot;Disentangling Chat with Local Coherence Models&quot; and
+&quot;Extending the Entity Grid with Entity-Specific Features&quot;, and the ACL
+'08 paper &quot;Coreference-inspired Coherence Modeling&quot;. Hopefully, it is
+also a useful general resource for people interested in local
+coherence modeling, chat disentanglement, or both. It should be
+useable as a plug-and-play replacement for many generative coherence
+models, such as entity grids, or, with a little work, a feature
+extractor for discriminative models.</p>
+<p>The software is copyrighted by its authors, and distributed to you
+under the <a class="reference external" href="http://www.gnu.org/licenses/gpl.html">GPL</a>, version 3 or
+any subsequent version.</p>
+<p>Nearly all the software was written by Micha Elsner, but the tree
+package was written by Eugene Charniak and Mark Johnson, and the OWLQN
+optimizer is by Jianfeng Gao and Mark Johnson. Support requests
+should go to Micha Elsner.</p>
+<p>Although there are probably multiple places to get this software
+(including the ACL anthology), the most current version is available
+from <a class="reference external" href="https://bitbucket.org/melsner/browncoherence">https://bitbucket.org/melsner/browncoherence</a>.</p>
+</div>
+<div class="section" id="installing-the-software">
+<h1><a class="toc-backref" href="#id2">Installing the software</a></h1>
+<p>First off, please <em>check Bitbucket</em> to make sure you have the latest
+version!</p>
+<p>You will need to fill in some file paths. Edit the file
+<em>include/common.h</em> : change the definition of <em>DATA_PATH</em> so that it
+points to the <em>data</em> directory. (No trailing slash!)</p>
+<p>Edit the Makefile to point to your local copy of the GSL and
+Wordnet. If you don't have Wordnet, you can turn it off in the
+Makefile (the only thing we use is the stemmer, so it's not
+particularly important). If you don't have the GSL, you'll need to
+recode some things by hand-- this package mostly uses GSL random
+number generation, which is easy to replace.</p>
+<p>Check that you can make things:</p>
+<pre class="literal-block">
+% make everything
+</pre>
+<p>Check that you can run things. We have no automatic unit tests yet, so
+see the <a class="reference internal" href="#using-the-software">Using the Software</a> section below and try to run some of the
+examples.</p>
+<p>To make any particular program we describe below, just type:</p>
+<pre class="literal-block">
+% make *program*
+</pre>
+<p>Executables are automatically generated in <em>bin32</em> on a 32-bit
+architecture, and <em>bin64</em> on a 64-bit architecture.</p>
+</div>
+<div class="section" id="using-the-software">
+<h1><a class="toc-backref" href="#id3">Using the software</a></h1>
+<p>The &quot;important&quot; output from a program goes to STDOUT; debugging
+information goes to STDERR.</p>
+<div class="section" id="document-formats">
+<h2><a class="toc-backref" href="#id4">Document Formats</a></h2>
+<p>The software operates on files containing Penn Treebank-style
+trees. There is an example of an acceptable tree file in
+<em>data/smokedoc.txt</em>.</p>
+<p>Some of the software expects named-entity type labels on NPs. We
+assign these by running OPENNLP (available from
+<a class="reference external" href="http://opennlp.sourceforge.net/projects.html">http://opennlp.sourceforge.net/projects.html</a>) using the invocation:</p>
+<pre class="literal-block">
+zcat *file* | perl -pe 's/^\(S1/(TOP/' | java -Xmx350m opennlp.tools.lang.english.NameFinder -parse opennlp-tools-1.4.1/models/namefind/*.bin.gz | gzip - &gt; *file.out.gz*
+</pre>
+<p>The output trees have NE tags under the NP tags. The permissible NE
+tags are <em>person</em>, <em>organization</em>, <em>location</em>, <em>percent</em>, <em>time</em>,
+<em>date</em> and <em>money</em>. An example with an <em>organization</em> tag is:</p>
+<pre class="literal-block">
+(TOP (S (NP (DT The) (organization (NNPS Teachers) (NNP Insurance)) (CC and) (NNP Annuity) (NNP Association-College) (NNP Retirement) (NNPS Equities) (NNP Fund)) (VP (VBD said) ...
+</pre>
+<p>Some of the software expects Switchboard-style dialogue format. In
+this format, each tree is preceded by a tree that looks like:</p>
+<pre class="literal-block">
+( (CODE (SYM SpeakerA1) (. .) ))
+</pre>
+<p>Our software uses this snippet to decide the speaker of each
+utterance. There is an example of an acceptable dialogue file in
+<em>data/swbd-short.txt</em>.</p>
+<p>Other software uses an extension of this format designed for
+multiparty conversational transcripts. Here, the &quot;code&quot; marker tree
+contains a little more information:</p>
+<pre class="literal-block">
+( (CODE (SYM SpeakerD) (DIAL 1) (TIME 178) (MENT (SYM A))) )
+</pre>
+<p><em>SYM</em> is still a unique speaker ID; <em>DIAL</em> is the number of a
+conversational thread, and <em>TIME</em> is an integer timestamp, measuring
+seconds from the beginning of the transcript. <em>MENT</em> contains a list
+of <em>SYM</em> with the identifier letters of speakers who are mentioned in
+the utterance. An example of an acceptable transcript file is
+<em>data/transcript-short.txt</em>.</p>
+</div>
+<div class="section" id="data">
+<h2><a class="toc-backref" href="#id5">Data</a></h2>
+<p>Work on newswire text uses the Wall Street Journal, TB3 edition,
+annotated for named entity as described above with OPENNLP. Training
+consists of sections 2-13, and testing of sections 14-24. We actually
+use 3-13 to train the individual models, so we can use 2 to train
+combinations. We don't use 0 or 1.</p>
+<p>Some of our data files are built with scripts from MUC6 and NANC. The
+scripts are somewhat messy, so we've just given you the output files.</p>
+<p><em>train-linkable</em> is the list of words with coreferents in
+MUC. <em>unlinkable</em> is the list of words which appear 5 times or more
+without any coreferents. (The numbers next to each word are used by
+the scripts that build the files, but not meaningful to the model
+itself.) <em>proStats</em> contains a table of words which occur without
+(automatically resolved) coreferent pronouns in NANC, then a table of
+words with pronouns in NANC.</p>
+<p>Unfortunately, we can't give out all the datasets we use in our chat
+study because of licensing restrictions. If you want the synthetic
+Switchboard transcripts we use, or the parsed NPS data, just write to
+us.</p>
+<div class="section" id="switchboard-synthetic-data">
+<h3><a class="toc-backref" href="#id6">Switchboard Synthetic Data</a></h3>
+<p>If you have a local copy of Switchboard, you can create synthetic
+multiparty conversations like ours for yourself. Take the Switchboard
+parse files (without edits) in TB-3 format. First, strip backchannels
+and other nounless utterances using <em>script/contentOnly.py</em>:</p>
+<pre class="literal-block">
+% mkdir [no-backchannels]
+% python script/contentOnly.py [switchboard] [no-backchannels]
+</pre>
+<p>Now use <em>script/multicombine.py</em> to entangle the dialogues:</p>
+<pre class="literal-block">
+% mkdir [entangled]
+% python script/multicombine.py [no-backchannels] [entangled]
+</pre>
+<p>You can edit <em>multicombine</em> to determine whether it creates
+different-topic or same-topic entanglements, by setting the variable
+<em>makeDiff</em>. The topic determinations rely on the file
+<em>data/swbd-topics.txt</em>, which we extracted from the Switchboard header
+info.</p>
+</div>
+<div class="section" id="linux-irc-data">
+<h3><a class="toc-backref" href="#id7">Linux IRC data</a></h3>
+<p>We've provided our transcriptified versions of the Linux dev section
+and all six test annotations in <em>data/linux</em>; these should allow you
+to replicate our results for this dataset.</p>
+<p>If you want to process the files yourself, you can get our Linux data
+and software from <em>cs.brown.edu/~melsner</em>. We parsed the data with our
+local installation of the Charniak parser plus some simple postprocess
+scripts to discard parse failures and change the tags of &quot;yes&quot;, &quot;lol&quot;
+and &quot;haha&quot;. Then we put it into transcript format using
+<em>script/transcriptify.py</em>, which requires the original Elsner and
+Charniak chat software package. (Make sure the <em>analysis</em> library is
+in your python path before running this.):</p>
+<pre class="literal-block">
+% python script/transcriptify.py IRC/dev/linux-dev-0X.annot linux-dev-parse &gt; linux-dev-0X.trans
+</pre>
+</div>
+<div class="section" id="adams-08-irc-data">
+<h3><a class="toc-backref" href="#id8">Adams 08 IRC data</a></h3>
+<p>We can't give out the Adams '08 data ourselves, but you can get it by
+request from Craig Martell at the Naval Postgraduate School. It's in
+the same format as Linux, so all the tools work exactly the same-- our
+preprocessing for these datasets is the same as for Linux.</p>
+</div>
+</div>
+<div class="section" id="looking-at-data">
+<h2><a class="toc-backref" href="#id9">Looking at Data</a></h2>
+<p><strong>TestSent</strong> shows documents without syntactic annotation:</p>
+<pre class="literal-block">
+% bin32/TestSent data/smokedoc.txt
+data/wsj_0204.mrg
+data/smokedoc.txt
+this is preliminary information , subject to change , and may contain errors .  (data/smokedoc.txt-0)
+any errors in this report will be corrected when the final report has been completed .  (data/smokedoc.txt-1)
+*REST OF DOCUMENT*
+</pre>
+<p id="testgrid"><strong>TestGrid</strong> shows the entity grid for a document, which is useful for seeing how the syntactic analysis works:</p>
+<pre class="literal-block">
+% bin32/TestGrid data/smokedoc.txt
+data/smokedoc.txt
+
+        THIS S - - - - - - - - - - - - - - - - - -
+ INFORMATION O - - - - - - - - - - - - - - - - - -
+      CHANGE X - - - - - - - - - - - - - - - - - -
+        *REST OF THE GRID*
+</pre>
+</div>
+<div class="section" id="making-models">
+<h2><a class="toc-backref" href="#id10">Making Models</a></h2>
+<p>Each model type has an associated flag. The flag for the
+max-likelihood entity grid is <em>-n</em>.</p>
+<p>The models for our ACL '11 papers are included in a folder called
+<em>models</em>. Each of their names begins with the appropriate flag; where
+we used multiple training sets, we explain the differences below.</p>
+<p>The usual way to train a model is <strong>Train</strong>, which writes the model to
+standard out:</p>
+<pre class="literal-block">
+% bin32/Train -n data/smokedoc.txt &gt; smokemodel
+Making egrid model with 2 history items,  max salience 4,  smoothing 1,  generativity 1.
+data/smokedoc.txt ...
+data/smokedoc.txt-1 ...
+Estimating parameters.
+</pre>
+<div class="section" id="entity-grid-extended-entity-grid">
+<h3><a class="toc-backref" href="#id11">Entity grid / extended entity grid</a></h3>
+<p>Our baseline entity grid is <em>-n</em>. Our extended entity grid is
+<em>-f</em>. You can train them as shown above. We've also provided
+pre-trained models <em>n-wsj.dump</em> and <em>f-wsj.dump</em> in the <em>models</em>
+directory, so you can just use them.</p>
+<p>To test the effect of mention detection, unfortunately, you have to
+comment out a block of code (marked by <em>-- mention --</em>) in <em>Sent.cc</em>.</p>
+</div>
+<div class="section" id="linear-entity-grid">
+<h3><a class="toc-backref" href="#id12">Linear entity grid</a></h3>
+<p>The logistic-regression entity grid used in the chat paper is <em>-m</em>. We
+trained this model with a parallel training procedure described in
+Mann et al '09, mostly because we wanted to use the same training
+scripts as for the topical entity grid. We think the <em>Train</em> program
+and a little less data will work fine too. (In fact, for the <em>-f</em>
+model, you should definitely use <em>Train</em> and the real WSJ instead of
+NANC. Possibly this is because the named entity detector doesn't work
+as well on automatic parses but we don't really know.)</p>
+<p>To use the parallel trainer, split your data into folds (we used
+10). For each fold, run feature extraction using <strong>Featurize</strong>:</p>
+<pre class="literal-block">
+% bin32/Featurize -m data/smokedoc.txt &gt; feats.dump
+    Making max ent egrid model with 6 history items,  max salience 4,  generativity 1.
+    data/smokedoc.txt ...
+    data/smokedoc.txt-1 ...
+</pre>
+<p>Now estimate a model for each fold using <strong>TrainFromFeatures</strong>:</p>
+<pre class="literal-block">
+% bin32/TrainFromFeatures -m feats.dump &gt; feats-model.dump
+    Making max ent egrid model with 6 history items,  max salience 4,  generativity 1.
+    Reading from feats.dump ... Opening trace file feats.dump
+    0...
+    1000...
+    Read 1558 datapoints.
+    1558 effective samples, 935 points, 59319 parameters.
+    iteration 1
+    weight vector norm 0
+    gradient norm 2843.37
+    LL 2159.85
+    *MORE GRADIENT OPTIMIZATION*
+</pre>
+<p>(For real data, you would have done each of these steps 10 times.)</p>
+<p>Finally, average the results using <strong>Average</strong>:</p>
+<pre class="literal-block">
+% bin32/Average -m feats-model.dump [9 other models] &gt; final-model.dump
+    Making max ent egrid model with 6 history items,  max salience 4,  generativity 1.
+    Model is: feats-model.dump
+    Loading max ent entity grid.
+</pre>
+<p>(The scripts we used to do this are specific to our computing cluster,
+so we're not distributing them, but they aren't very complicated.)</p>
+<p>We trained <em>models/m-model.dump</em> on parsed Fisher data, and
+<em>models/m-wsj.dump</em> on parsed NANC. (The NANC data is files 000
+through 003 of the McClosky self-training dataset, and the Fisher data
+is all the files with indices less than 1200</p>
+</div>
+<div class="section" id="topical-entity-grid">
+<h3><a class="toc-backref" href="#id13">Topical entity grid</a></h3>
+<p>The topical entity grid from the chat paper is <em>-v</em>. To make this
+model, you have to run two steps, LDA and then parameter learning.</p>
+<p>You can make data for LDA using <strong>DocWordMatrix</strong>. You have to edit
+this program to provide it with the correct path to your working
+directory (down at the bottom). Then you can run Blei's LDA code
+(which you get from his Princeton website):</p>
+<pre class="literal-block">
+% bin32/DocWordMatrix [files] &gt; matrix
+% lda est 1 200 data/settings.txt seeded [working dir]
+</pre>
+<p>Now you have to edit the code in <em>Featurize</em>, <em>TrainFromFeatures</em> and
+<em>Average</em> to give the correct path to your LDA working directory, and
+then run the training procedure above.</p>
+<p>We've provided our LDA output (<em>data/ldaSwbd</em> and <em>data/ldaWSJ</em>), and
+our model outputs <em>models/v-model.dump</em> and <em>models/v-wsj.dump</em>, which
+have the same training sets as before.</p>
+</div>
+<div class="section" id="ibm-1">
+<h3><a class="toc-backref" href="#id14">IBM-1</a></h3>
+<p>The IBM-1 model we use in our combination experiments has the flag
+<em>-ww</em>. This model uses distributed training. You can use <strong>CreateIBM</strong>
+to create an initial (stub) model:</p>
+<pre class="literal-block">
+% bin32/CreateIBM -ww &gt; initialIBM
+Making IBM model with 1 context sentences, 1 topics, emission prior 0.1.
+</pre>
+<p>Use <strong>DistributedExpectations</strong> on your entire corpus; [start index]
+and [end index] tell the program which documents within the corpus to
+process, so you should give each parallel process a different range of
+indices:</p>
+<pre class="literal-block">
+% bin32/DistributedExpectations -ww ibminit [start index] [end index] data/smokedoc.txt &gt; foldx.dump
+Making IBM model from file...
+data/smokedoc.txt-1 ...
+Likelihood: 0
+</pre>
+<p>Use <strong>CombineAndMax</strong> to run the M-step on all the dump files from the
+previous step:</p>
+<pre class="literal-block">
+% bin32/CombineAndMax -ww ibminit [all fold dump files] &gt; step1.dump
+Making IBM model from file...
+Reading foldx.dump...
+Estimating parameters.
+</pre>
+<p>Then replace <em>ibminit</em> with <em>step1.dump</em> and do it all over again-- at
+least 5 times. As before, we use a script, but it won't work on your
+system.</p>
+<p>Our model is <em>models/ww-wsj.dump</em>, which is trained on NANC. Since
+it's rather large, we've provided it in bzip2 format-- you need to
+unzip it before you use it.</p>
+</div>
+<div class="section" id="pronouns">
+<h3><a class="toc-backref" href="#id15">Pronouns</a></h3>
+<p>The pronoun code flag is <em>-wp</em>. It runs some custom code designed to
+work over Charniak's unsupervised pronoun model (which we've given you
+in <em>data/charniakModel.txt</em>). To adapt the parameters, use
+<strong>TransferIBM</strong>:</p>
+<pre class="literal-block">
+% bin32/TransferIBM -wp -ec data/charniakModel.txt data/smokedoc.txt
+Creating base model from data/charniakModel.txt
+Reading Charniak model from file...
+Making pronoun model.
+</pre>
+<p>Our model is <em>models/wp-wsj.dump</em>.</p>
+</div>
+<div class="section" id="discourse-newness">
+<h3><a class="toc-backref" href="#id16">Discourse-newness</a></h3>
+<p>The discourse-new model flag is <em>-e</em>. This model can be trained with
+<em>Train</em> as seen above, or we've provided a pre-trained model as
+<em>models/e-wsj.dump</em>.</p>
+</div>
+<div class="section" id="time">
+<h3><a class="toc-backref" href="#id17">Time</a></h3>
+<p>The flag for this model is <em>-t</em>.</p>
+<p>The histogram of time gaps is estimated by
+<strong>script/sampleTimes.py</strong>. This expects a sorted list of time gaps.
+You can get this using the <strong>analysis/deltaTHist.py</strong> program from
+Elsner and Charniak's chat package, or use the one we provide in
+<em>data/chatDeltaT.py</em>:</p>
+<pre class="literal-block">
+% python analysis/printDeltaT.py IRC/dev/linux-dev-0X.annot &gt; timeGaps
+% python script/sampleTimes.py timeGaps &gt; timeHist
+</pre>
+<p>Finally, you edit the <strong>Train</strong> program to point to the correct
+histogram file (the <em>timeHist</em> file you just made) and run:</p>
+<pre class="literal-block">
+% bin32/Train -t /dev/null &gt; timeModel
+</pre>
+<p>(This just makes some minor format changes to your histogram.)</p>
+<p>Our time model for our Switchboard simulated chats is
+<em>models/t-model.dump</em>; the one estimated from the Linux development
+set is <em>models/t-irc.dump</em>.</p>
+</div>
+<div class="section" id="speaker">
+<h3><a class="toc-backref" href="#id18">Speaker</a></h3>
+<p>The flag for this model is <em>-k</em>. We tuned the <em>alpha</em> parameter by
+hand. You can set it in <em>Train</em>, or just hack the model once it's
+written to disk. Again, the trainer doesn't really do anything and you
+can run it on <em>/dev/null</em>.</p>
+<p>Our model (for all datasets) is <em>models/k-model.dump</em>.</p>
+</div>
+<div class="section" id="mention">
+<h3><a class="toc-backref" href="#id19">Mention</a></h3>
+<p>The flag for this model is <em>-a</em>. For this one, you need to train on a
+transcript file with properly assigned <em>MENT</em> nodes in the <em>CODE</em>
+trees. To train on the individual threads of a transcript as if they
+were individual documents, use <strong>TrainOnThreads</strong>:</p>
+<pre class="literal-block">
+% bin32/TrainOnThreads  -a data/linux/linux-dev-0x.trans &gt; mentModel
+Making address by name model.
+data/linux-dev-0x.trans ...
+</pre>
+<p>Our model is <em>models/a-model.dump</em>, trained on Linux dev as shown. It
+doesn't make sense to use this on Switchboard because our tools don't
+bother trying to detect name mentions.</p>
+</div>
+<div class="section" id="combinations">
+<h3><a class="toc-backref" href="#id20">Combinations</a></h3>
+<p>Log-linear model combinations have a <em>-x</em> flag. You need to train
+these with <em>TrainDiscMixture</em> and <em>TrainWSJDiscMixture</em> to optimize
+discrimination performance, or <em>TrainMixture</em> to optimize single
+utterance disentanglement. In either case, you give all the models
+with their flags as arguments, followed by some training
+documents. <em>TrainWSJDiscMixture</em> works on ordinary documents and
+permutes their utterances. <em>TrainDiscMixture</em> works on Switchboard
+dialogues and permutes their turns. Don't use the documents you
+trained the component models on, because you'll overfit. (For
+newswire, we train combinations on WSJ section 2):</p>
+<pre class="literal-block">
+% bin32/TrainWSJDiscMixture -n models/n-model.dump -ww models/ww-model.dump [path-to]/wsj/2/*
+Model is: models/m-model.dump
+Loading max ent entity grid.
+Model is: models/ww-model.dump
+Making IBM model from file...
+*GRADIENT OPTIMIZATION*
+</pre>
+<p>We provide several models in the <em>models</em> directory. <em>x-mvwpww-wsj</em>
+and <em>x-mvwpww-swbd</em> are mixtures for discrimination. <em>x-mvwpwwt-diff</em>
+and <em>x-mvwpwwt-same</em> are for disentanglement on Switchboard synthetic
+instances with different and same topics, respectively. <em>xtkam-irc</em>
+and <em>xtka-irc</em> are for disentanglement on IRC, trained on the Linux
+development section. For WSJ experiments, the models are
+<em>x-fwpwwe-wsj</em> and <em>x-nwpwwe-wsj</em>. (The naming convention is <em>x</em>
+followed by the list of component model flags, so <em>xtka</em> is the
+baseline and <em>xtkam</em> is the baseline plus entity grid.)</p>
+</div>
+</div>
+<div class="section" id="examining-a-model">
+<h2><a class="toc-backref" href="#id21">Examining a Model</a></h2>
+<p>Model files are plain text, though they may not be particularly
+intelligible. For instance, the <em>smokemodel</em> entity grid we
+demonstrated how to create with <em>Train</em> looks like this:</p>
+<pre class="literal-block">
+NAIVE
+2       4       1       1
+1
+0
+        0       0.25
+        1       0.25
+        2       0.25
+        3       0.25
+
+&gt;&gt;
+*MORE PARAMETERS*
+</pre>
+<p>There is a <strong>Print</strong> program that translates these parameters into
+(sometimes) useful output. <strong>Print</strong> isn't always guaranteed to do anything
+interesting; exactly what the output looks like depends on the model type:</p>
+<pre class="literal-block">
+% bin32/Print -n smokemodel
+Model is: smokemodel
+Loading entity grid.
+[S S 2]:
+        S:      0.25
+        O:      0.25
+        X:      0.25
+        -:      0.25
+</pre>
+</div>
+<div class="section" id="testing-models">
+<h2><a class="toc-backref" href="#id22">Testing Models</a></h2>
+<div class="section" id="discrimination">
+<h3><a class="toc-backref" href="#id23">Discrimination</a></h3>
+<p>The binary discrimination task is a simple ordering evaluation. It
+tests the model's ability to distinguish between a human-authored
+document in its original order, and a random permutation of that
+document.</p>
+<p>There are several ways to run this test. The simplest is to use
+<strong>DiscriminateRand</strong>; this program reads any number of documents and
+performs the test on each one, using 20 random permutations. This is
+the mode in which we ran ordering tests on <em>WSJ</em>. The program prints
+the raw number of wins, ties and tests to STDOUT:</p>
+<pre class="literal-block">
+% bin32/DiscriminateRand -f models/f-wsj.dump [path-to-wsj]/test/*
+Model is: models-for-test/f-wsj.dump
+Loading max ent naive entity grid with more features.
+Gold score: -114.55
+Score: -118.335 WIN
+Score: -119.055 WIN
+Score: -119.714 WIN
+Score: -126.861 WIN
+Score: -117.529 WIN
+Score: -135.7 WIN
+Score: -136.25 WIN
+Score: -118.743 WIN
+Score: -128.603 WIN
+Score: -135.034 WIN
+Score: -112.473 LOSE
+Score: -128.03 WIN
+Score: -128.247 WIN
+Score: -136.18 WIN
+Score: -120.852 WIN
+Score: -127.633 WIN
+Score: -128.307 WIN
+Score: -130.382 WIN
+Score: -116.738 WIN
+Score: -120.842 WIN
+*LOTS OF DOCUMENTS*
+20080 tests, 16891 wins, 226 ties.
+Mean score: -750.41.
+Total score: -1.58216e+07.
+Mean gold score: -737.508.
+Total gold score: -740458.
+Average margin: 270.937.
+Accuracy: 0.841185 F: 0.845946.
+</pre>
+<p>The accuracy and F-scores are on the last line; notice that the
+F-score (which differs from the accuracy due to different handling of
+ties) is 84.6-- this is slightly different from the 84.5 reported in
+the paper because we parallelize some of the tests, which changes the
+random seeding slightly.</p>
+<p>We permute turns instead of utterances for Switchboard. We used a
+fixed set of permuted documents which we wrote out to files and
+compared them with <strong>Discriminate</strong>, which reads a single gold
+document, followed by a set of permuted versions:</p>
+<pre class="literal-block">
+% bin/Discriminate -m models/m-model.dump [gold file] [bad files]
+</pre>
+<p>However, you can also perform this test on random permutations using
+<strong>DiscriminateDiscRand</strong>. It works the same way as <em>DiscriminateRand</em>:</p>
+<pre class="literal-block">
+% bin32/DiscriminateDiscRand -m models/m-model.dump [path-to-swbd]/test/*.mrg
+      *LOTS OF DOCUMENTS*
+    3080 tests, 2611 wins, 0 ties.
+    Mean score: -963.063.
+    Total score: -3.11455e+06.
+    Mean gold score: -957.876.
+    Total gold score: -147513.
+    Average margin: 108.921.
+    Accuracy: 0.847727 F: 0.847727.
+</pre>
+<p>The F-score of 84.8 differs from the paper's 86.0 (corresponding to
+2611 wins instead of 2650) because, again, we're using a different set
+of random permutations. (All models in the paper are compared on the
+same permutations.)</p>
+</div>
+<div class="section" id="insertion">
+<h3><a class="toc-backref" href="#id24">Insertion</a></h3>
+<p>The insertion test finds the optimal place to insert each sentence
+into the document, given the correct ordering of the other
+sentences. It is quadratic in document length. It is typically more
+difficult than discrimination. The program reports two scores:
+perfect insertions and a positional score. (We report only the perfect
+insertions.)</p>
+<p>You can run this test using <strong>Insert</strong>. (We parallelize our tests, and
+advise you do the same, as insertion can be quite time-consuming.) The
+program prints the mean positional score, and the number of sentences
+correctly inserted, to STDOUT:</p>
+<pre class="literal-block">
+% bin32/Insert -n models/n-wsj.dump data/smokedoc.txt
+Model is: models/n-wsj.dump
+Loading entity grid.
+data/smokedoc.txt ...
+    this is preliminary information , subject to change , and may contain errors .  (data/smokedoc.txt-0)
+    *REST OF ORIGINAL DOC*
+this is preliminary information , subject to change , and may contain errors .  (data/smokedoc.txt-0)
+    0:      -504.181:       1
+            1:      -504.433:       0.888889
+            2:      -500.375:       0.777778
+    3:      -499.704:       0.666667
+    4:      -500.857:       0.555556
+            5:      -500.857:       0.444444
+            6:      -499.301:       0.333333
+            7:      -499.625:       0.222222
+            8:      -500.476:       0.111111
+            9:      -500.149:       0
+            10:     -500.314:       -0.111111
+            11:     -500.314:       -0.222222
+            12:     -499.301:       -0.333333
+            13:     -499.301:       -0.444444
+            14:     -499.301:       -0.555556
+            15:     -499.301:       -0.666667
+            16:     -499.771:       -0.777778
+            17:     -499.543:       -0.888889
+            18:     -499.138:       -1
+    Removed: 0      Inserted: 18
+    Score: -1
+*REST OF SENTENCES*
+    Document mean: -0.77008
+    Document perfect: 0 of 19
+
+    Mean: -0.77008
+    Perfect: 0 of 19
+    Perfect (by line): 0
+    Perfect (by doc): 0
+    Mean (by line): -0.77008
+</pre>
+</div>
+<div class="section" id="disentangling-a-single-utterance">
+<h3><a class="toc-backref" href="#id25">Disentangling a single utterance</a></h3>
+<p>You can disentangle a single utterance using <strong>RankDisentangle</strong>,
+which plainly makes sense only for a transcript:</p>
+<pre class="literal-block">
+% bin32/RankDisentangle -x models/xtka-irc data/linux/test0.clean.trans
+    Model is: models/xtka-irc
+    Loading mixture model.
+    Model is: models/k-model.dump
+    Loading speaker model.
+    Model is: models/a-model.dump
+    Loading address by name model.
+    Model is: models/t-irc.dump
+    Loading time gap model.
+    Reading the gold file data/linux/test0.clean.trans ...
+    True objective -3270.16
+    Transcript length: 791
+    Processing:
+    what should i choose between slackware 11.0 and redhat 5 ? i 'm looking for a great desktop envoiernment , etc  (A D0: 15381 data/linux/test0.clean.trans-0)
+    WIN
+    *MANY MORE SENTENCES*
+    0 ties.
+    Correctly decided 0.990895 tests (54848 of 55352)
+    Completely correct on 0.778761 tests (616 of 791)
+    Rank 0.990895
+</pre>
+<p>The &quot;correctly decided&quot; and &quot;rank&quot; statistics give the relatively
+uninteresting number of times the system rejects putting an utterance
+in an incorrect thread (that is, if utterance 10 can be part of all 80
+threads in the transcript, there are 79 &quot;decisions&quot; to make). The
+interesting statistic is how many utterances are &quot;completely correct&quot;
+(assigned to the correct thread ahead of all other threads). For this
+annotation of the Linux test set, the baseline gets 77.9% with 616
+sentences correct. The paper's figure of 74% is averaged over all 6
+independent annotations (test0 through test5).</p>
+</div>
+<div class="section" id="disentangling-a-transcript">
+<h3><a class="toc-backref" href="#id26">Disentangling a transcript</a></h3>
+<p>You can disentangle a whole transcript using <strong>TestDisentangle</strong>:</p>
+<pre class="literal-block">
+% bin32/TestDisentangle -m models/m-model.dump data/transcript-short.txt
+    Model is: models/m-model.dump
+    Loading max ent entity grid.
+    Reading the gold file data/transcript-short.txt ...
+    Selecting binary disentanglement...
+    True objective -246.151
+    Current objective -266.131
+    Moving 6 for gain 1.56512
+    Current objective -268.505
+    Moving 1 for gain 0.655975
+    *LOTS OF SEARCH*
+    Best objective -244.118
+    T2 1 S1 :  hello .
+    T2 5 S3 :  okay , mary .
+    T2 20 S2 :  yes .
+    T2 31 S0 :  hello ,
+    T2 32 S1 :  hi .
+    T2 44 S0 :  hello
+    *REST OF DOCUMENT*
+</pre>
+<p>This program searches for a while, then prints out the document in the
+same format as our original chat tools, which you can use to score the
+output. To get an chat-style printout of the gold data, use
+<strong>ChatStyleTranscript</strong>:</p>
+<pre class="literal-block">
+% bin32/ChatStyleTranscript data/transcript-short.txt
+Reading the gold file data/transcript-short.txt ...
+T1 1 S1 :  hello .
+T2 5 S3 :  okay , mary .
+T2 20 S2 :  yes .
+T1 31 S0 :  hello ,
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="programming-with-the-software">
+<h1><a class="toc-backref" href="#id27">Programming with the software</a></h1>
+<p>The code uses a fair amount of inheritance, and it's often worthwhile
+looking at the ancestor classes before trying to figure out how a
+derived class works. The base class for all models is
+<strong>CoherenceModel</strong>. The typical life of a CoherenceModel:</p>
+<ul class="simple">
+<li>Create a new model with the first constructor.</li>
+<li>Call <em>train</em> on all the training documents. <em>train</em> should be called
+only before <em>estimate</em>.</li>
+<li>Call <em>estimate</em> to estimate the parameters (normalize things, run
+EM, perform gradient descent ... ). <em>estimate</em> should be called only
+once.</li>
+<li>You may now call <em>write</em> to write out a machine-readable version of
+the model. <em>write</em> often only writes out the estimated model
+parameters, so you should call it after <em>estimate</em>.</li>
+<li>The istream-based constructor calls <em>read</em>. This is the inverse of
+<em>write</em>.</li>
+<li>Call <em>logProbability</em> on all the testing documents.</li>
+</ul>
+<p>If you want to evaluate the model on many different permutations of a
+document, you will use <em>permProbability</em>. This is the main method for
+both training and testing the model; <em>train</em> and <em>logProbability</em> both
+call it internally. Models are allowed to cache information about a
+document that doesn't vary with order (for instance, the number of
+occurrences of a word). Therefore, you must call <em>initCaches</em> before
+invoking <em>permProbability</em>. When you are done using <em>permProbability</em>,
+call <em>clearCaches</em>.</p>
+</div>
+</div>
+</body>
+</html>

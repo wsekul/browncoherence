@@ -1,0 +1,5 @@
+MIXTURE
+-f models/f-wsj.dump -wp models/wp-wsj.dump -e models/e-model.dump -ww models/ww-wsj.dump  -- 
+1	4
+0.251327 0.429443 0.274175 0.0359968 
+20
