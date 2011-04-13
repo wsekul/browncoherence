@@ -1,0 +1,5 @@
+MIXTURE
+-wp models/wp-model.dump -ww models/ww-model.dump -m models/m-model.dump -t models/t-model.dump -v models/v-model.dump  -- 
+1	5
+0.128797 0.15751 0.458245 0.444114 0.57107 
+1876
