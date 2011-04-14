@@ -40,6 +40,11 @@ You will need to fill in some file paths. Edit the file
 *include/common.h* : change the definition of *DATA_PATH* so that it
 points to the *data* directory. (No trailing slash!)
 
+Some of the largest model files are compressed, and you will need to
+uncompress them before using them. The compressed files are
+*data/ldaFiles.tar.bz2*, which is necessary for the Topical Entity
+Grid, and *models/ww-wsj.dump.bz2*, the WSJ-trained IBM model.
+
 Edit the Makefile to point to your local copy of the GSL and
 Wordnet. If you don't have Wordnet, you can turn it off in the
 Makefile (the only thing we use is the stemmer, so it's not
