@@ -182,12 +182,13 @@ string& stem(const string& str)
 		nounCache[str] = str;
 	}
 
+	return nounCache[str];
 #else
 	cerr<<"Warning: this function doesn't work without WORDNET.\n";
-	nounCache[str] = str;
+	strStrMap& cache = STEM_CACHE[0];
+	cache[str] = str;
+	return cache[str];
 #endif
-
-	return nounCache[str];
 }
 
 string& stem(Tree* tree)
